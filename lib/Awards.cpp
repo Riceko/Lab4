@@ -15,4 +15,3 @@ awards::performAwardCeremony(RankList& recipients, AwardCeremonyActions& actions
   actions.turnOffTheLightsAndGoHome();
 }
 
-

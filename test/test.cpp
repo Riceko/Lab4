@@ -3,7 +3,9 @@
 using shapes::Triangle;
 
 
-TEST(TriangleTests, testPerimeter) {
-    Triangle *aTriangle = new Triangle(3,3,3);
-    EXPECT_EQ (aTriangle->getPerimeter(),9);
+TEST(AwardsTests, testWorks) {
+    RankList list = new RankList;
+    AwardCeremonyActions actions = new AwardCeremonyActions;
+    EXPECT_NO_THROW(performAwardCeremony(list, actions));
+    
 }
