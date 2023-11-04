@@ -1,9 +1,11 @@
 #include "gtest/gtest.h"
+#include "../include/Triangle.h"
 
 #include "../include/Awards.h"
 #include <gmock/gmock.h>
 #include <vector>
 #include <iostream>
+using shapes::Triangle;
 using namespace std;
 using namespace awards;
 using awards::RankList;
@@ -25,6 +27,7 @@ TEST(HailStoneTests, testEven) {
 }
 TEST(HailStoneTests, testOdd) {
     EXPECT_TRUE(satisfiesHailstone(7));
+}
 
 
 class StubRankList : public RankList{
@@ -63,6 +66,7 @@ TEST(AwardsTest, testCeremonyInSequence) {
     }
 
     awards::performAwardCeremony(rankList, ceremony);
+}
 
 TEST(TriangleTests, testPerimeter) {
     Triangle *aTriangle = new Triangle(3,3,3);
